@@ -37,4 +37,10 @@ export default [
     snapshot: getSnapshot('canvas-watermark'),
     url: './canvas-watermark/index.html',
   },
+  {
+    name: '截图',
+    description: '使用屏幕录制截图，可还行？',
+    // snapshot: getSnapshot('media-screenshot'),
+    url: './media-screenshot/index.html',
+  },
 ] as Demo[]

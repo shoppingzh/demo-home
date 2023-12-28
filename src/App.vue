@@ -5,7 +5,7 @@
     <div
       v-for="(item, index) in demos"
       :key="index"
-      class="mx-2 card w-[300px] bg-white cursor-pointer hover:translate-y-[-2px] transition-all duration-500"
+      class="mb-4 mx-2 card w-[300px] bg-white cursor-pointer hover:translate-y-[-2px] transition-all duration-500"
       @click="go(item)">
       <div class="h-[120px] bg-gray-800">
         <img v-if="item.snapshot" :src="item.snapshot" class="w-full h-full object-cover">
