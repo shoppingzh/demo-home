@@ -5,9 +5,11 @@
     <div
       v-for="(item, index) in demos"
       :key="index"
-      class="card w-[300px] bg-white cursor-pointer hover:translate-y-[-2px] transition-all duration-500"
+      class="mx-2 card w-[300px] bg-white cursor-pointer hover:translate-y-[-2px] transition-all duration-500"
       @click="go(item)">
-      <img :src="item.snapshot" class="w-full h-[120px] object-cover">
+      <div class="h-[120px] bg-gray-800">
+        <img v-if="item.snapshot" :src="item.snapshot" class="w-full h-full object-cover">
+      </div>
       <div class="p-2">
         <div class="text-md text-gray-800 font-semibold">{{ item.name }}</div>
         <div class="mt-2 text-xs text-gray-400">{{ item.description }}</div>
