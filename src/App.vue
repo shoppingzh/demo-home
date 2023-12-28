@@ -1,30 +1,33 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="p-5 flex flex-wrap">
+    <div
+      v-for="(item, index) in demos"
+      :key="index"
+      class="card w-[300px] bg-white cursor-pointer hover:translate-y-[-2px] transition-all duration-500"
+      @click="go(item)">
+      <img :src="item.snapshot" class="w-full h-[120px] object-cover">
+      <div class="p-2">
+        <div class="text-md text-gray-800 font-semibold">{{ item.name }}</div>
+        <div class="mt-2 text-xs text-gray-400">{{ item.description }}</div>
+      </div>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
+<script setup lang="ts">
+import demos, {Demo} from '@/config/demos'
+
+function go(item: Demo) {
+  if (!item.url) return
+  window.open(item.url)
+}
+
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.card {
+  box-shadow: 8px 8px 20px 0 rgba(55,99,170,.1), -8px -8px 20px 0 #fff, inset 0 4px 20px 0 hsla(0,0%,100%,.5);
 }
 </style>
