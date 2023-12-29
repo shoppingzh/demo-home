@@ -43,4 +43,34 @@ export default [
     // snapshot: getSnapshot('media-screenshot'),
     url: './media-screenshot/index.html',
   },
+  {
+    name: '洗牌效果',
+    description: '洗牌效果',
+    snapshot: getSnapshot('shuffle'),
+    url: './shuffle/index.html',
+  },
+  {
+    name: '瀑布图效果',
+    description: '瀑布图效果',
+    snapshot: getSnapshot('waterfall'),
+    url: './waterfall/index.html',
+  },
+  {
+    name: '图片像素点查看',
+    description: '图片像素点查看',
+    snapshot: getSnapshot('pixel-viewer'),
+    url: './pixel-viewer/index.html',
+  },
+  {
+    name: '自动打字',
+    description: '自动打字',
+    snapshot: getSnapshot('auto-input'),
+    url: './auto-input/index.html',
+  },
+  {
+    name: '创建表格',
+    description: '创建表格',
+    snapshot: getSnapshot('create-table'),
+    url: './create-table/index.html',
+  },
 ] as Demo[]
