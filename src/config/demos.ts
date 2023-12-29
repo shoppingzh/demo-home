@@ -83,4 +83,39 @@ export default [
     snapshot: getSnapshot('corner-qrcode'),
     url: './corner-qrcode/index.html',
   },
+  {
+    name: 'CSS Tooltip',
+    snapshot: getSnapshot('css-tooltip'),
+    url: './css-tooltip/index.html',
+  },
+  {
+    name: '饿了么首页效果',
+    snapshot: getSnapshot('ele-me'),
+    url: './ele.me/index.html',
+  },
+  {
+    name: '京东商品信息',
+    snapshot: getSnapshot('goods-preview'),
+    url: './goods-preview/index.html',
+  },
+  {
+    name: '八卦',
+    snapshot: getSnapshot('gossip'),
+    url: './gossip/index.html',
+  },
+  {
+    name: 'iPhone搜索效果',
+    snapshot: getSnapshot('iphone-search'),
+    url: './iphone-search/index.html',
+  },
+  {
+    name: '直播动效',
+    snapshot: getSnapshot('living'),
+    url: './living/index.html',
+  },
+  {
+    name: '网页放大镜',
+    snapshot: getSnapshot('magnifier'),
+    url: './magnifier/index.html',
+  },
 ] as Demo[]
