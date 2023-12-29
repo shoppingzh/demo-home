@@ -73,4 +73,14 @@ export default [
     snapshot: getSnapshot('create-table'),
     url: './create-table/index.html',
   },
+  {
+    name: '365天倒计时',
+    snapshot: getSnapshot('365-dots'),
+    url: './365dots/index.html',
+  },
+  {
+    name: '二维码角',
+    snapshot: getSnapshot('corner-qrcode'),
+    url: './corner-qrcode/index.html',
+  },
 ] as Demo[]
